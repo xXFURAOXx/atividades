@@ -12,7 +12,7 @@
 <script src="interacao/html5shiv.min.js"></script>
 <link href="estilos/principal.css" rel="stylesheet" type="text/css">
 <style>
-h2 {
+#curiosidades main h2 {
 	background-color: #C0262C;
 	background-image: url(multimidia/importante-saber.jpg), url(recursos/back-bolinha.gif);
 	background-repeat: no-repeat, repeat;
@@ -25,33 +25,33 @@ padding: 61px 400px 61px 100px;
 	letter-spacing: .1em;
 
 }
- figcaption {
+#curiosidades main figcaption {
  background-color:#C0262C; 
  padding: 7px 0;
  color: #FFFFFF; 
  font-size: 1.5em; 
 }
 
-figure { 
+#curiosidades main figure { 
  border: #C0262C solid thin; 
  border-radius: 35px 35px 0 0; 
  padding: 20px 0 0; 
  text-align: center; 
 }
 
-ul li {
+#curiosidades main ul li {
 	list-style-type: none;
 	list-style-image: url(multimidia/ossinho.png);
 list-style-position: inside;
 	margin: 30px 0;
 }
 
-dt {
+#curiosidades main dt {
 	color: #fff;
 	background-color: #C0262C;
 	padding: 7px;
 }
-dd {
+#curiosidades main dd {
 	border: thin #C0262C solid;
 	border-radius: 0 0 25px 25px;
 	margin-top: -3px;
@@ -59,14 +59,14 @@ dd {
 	padding: 20px 20px 0;
 }
 
-ol {
+#curiosidades main ol {
 	list-style-type: none;
 	white-space: pre;
 	line-height: .9em;
 	/* definir a variável de contagem */
 	counter-reset: contador;
 }
-ol li:before{
+#curiosidades main ol li:before{
 	color: #999999;
 	/* incrementar a variável em 1 */
 	counter-increment: contador;
@@ -74,34 +74,34 @@ ol li:before{
 	content: "Questão " counter(contador) " \00BB  ";
 }
 
-ul li a {
+#curiosidades main ul li a {
 	text-decoration: none;
 	color: #C0262C;
 	font-weight: bold;
 	padding: 7px;
 }
-ul li a:hover {
+#curiosidades main ul li a:hover {
 	text-decoration: underline;
 }
 
-dd a[target="_blank"] {
+#curiosidades main dd a[target="_blank"] {
 	text-decoration: none;
 	color: #C0262C;
 	font-weight: bold;
 	padding: 7px;
 	display: inline-block;
 }
-dd a[target="_blank"]:hover {
+#curiosidades main dd a[target="_blank"]:hover {
 	text-decoration: underline;
 }
-dd a[href="#top"] {
+#curiosidades main dd a[href="#top"] {
 	text-decoration: none;
 	color: #C0262C;
 	font-weight: bold;
 	padding: 7px 0 7px 30px;
 	background: url(multimidia/seta-voltar.png) no-repeat left center;
 }
-dd a[href="#top"]:hover {
+#curiosidades main dd a[href="#top"]:hover {
 	text-decoration: underline;
 	background: url(multimidia/seta-voltar-hover.png) no-repeat left center;
 }
@@ -112,10 +112,54 @@ dd a[href="#top"]:hover {
 
 
 
-<body>
+<body id ="curiosidades">
 
 
-<a href="index.html">Home</a>
+	<header>
+
+		<h1>Meu amigo cão - Petshop</h1>
+		
+		<div id="anuncio">
+		
+		<img src="multimidia/anuncio-cantinho-feliz-h.jpg" alt="anúncio - cantinho feliz, hotel para cachorro">
+		</div>
+		<body>
+		
+		
+		<section>
+		
+		<p><a href="boletim.html">Assine o boletim mensal</a></p>
+		
+		<p>nos acompanhe: </p>
+		<figure>
+		<a href="#"><img src="multimidia/ms-facebook.gif" alt="facebook"></a> 
+		<a href="#"><img src="multimidia/ms-twitter.gif" alt="twitter"></a> 
+		<a href="#"><img src="multimidia/ms-youtube.gif" alt="youtube"></a> 
+		<a href="#"><img src="multimidia/ms-pinterest.gif" alt="pinterest"></a> 
+		<a href="#"><img src="multimidia/ms-gmais.gif" alt="google mais"></a>
+		</figure>
+		
+		</section>
+		
+		</header>
+		
+		<nav>
+		
+		<ul>
+		
+		<li><a href="index.html">Home</a></li>
+		
+		<li><a href="quem-somos.html">Quem somos</a></li>
+		
+		<li><a href="produtos.html">Produtos</a></li>
+		
+		<li><a href="banho-e-tosa.html">Banho e Tosa</a></li>
+		
+		<li><a href="curiosidades.html">Curiosidades</a></li>
+		
+		</ul>
+		
+		</nav>
 <main>
 
 <h1>
@@ -231,7 +275,8 @@ Antigamente esta raça era considerada um gladiador feroz, agora é vista como u
 <p> <a href="#top"> Voltar </a> </p>
 
 
-</dd>
+
+</dd>
 
 
 <dt><a id="collie"></a>Collie</dt>
